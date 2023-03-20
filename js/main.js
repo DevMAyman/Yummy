@@ -257,6 +257,10 @@ $("#search input")
   if(x.meals !== null){
     displayDataForFirstTime(x, ".section-search", x.meals.length);
   }
+  else{
+  $(`#search .row`).html('');
+  }
+  
     displaySingleCard("#search");
   });
 $("#search input")
@@ -275,7 +279,12 @@ $("#search input")
       myVar = `search.php?f=a`;
     }
     let x = await getMyData(myVar);
+    if(x.meals !== null){
     displayDataForFirstTime(x, ".section-search", x.meals.length);
+  }
+  else{
+  $(`#search .row`).html('');
+  }
     displaySingleCard("#search");
     $("#search .loading").fadeOut(1000, function () {
       $("body").css("overflow", `auto`);
