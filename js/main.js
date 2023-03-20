@@ -254,7 +254,7 @@ $("#search input")
     $("#search .loading").fadeOut(1000, function () {
       $("body").css("overflow", `auto`);
     });
-  if(x !== null){
+  if(x.meals !== null){
     displayDataForFirstTime(x, ".section-search", x.meals.length);
   }
     displaySingleCard("#search");
