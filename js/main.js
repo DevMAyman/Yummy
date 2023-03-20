@@ -254,7 +254,9 @@ $("#search input")
     $("#search .loading").fadeOut(1000, function () {
       $("body").css("overflow", `auto`);
     });
+  if(x !== null){
     displayDataForFirstTime(x, ".section-search", x.meals.length);
+  }
     displaySingleCard("#search");
   });
 $("#search input")
