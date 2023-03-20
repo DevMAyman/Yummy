@@ -258,7 +258,7 @@ $("#search input")
     displayDataForFirstTime(x, ".section-search", x.meals.length);
   }
   else{
-  $(`#search .row`).html('');
+  $(`.section-search .row`).html('');
   }
   
     displaySingleCard("#search");
@@ -283,7 +283,7 @@ $("#search input")
     displayDataForFirstTime(x, ".section-search", x.meals.length);
   }
   else{
-  $(`#search .row`).html('');
+  $(`.section-search .row`).html('');
   }
     displaySingleCard("#search");
     $("#search .loading").fadeOut(1000, function () {
